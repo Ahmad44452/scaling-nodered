@@ -13,6 +13,8 @@ The architecture consists of the following components:
 - **Node-RED API:** Multiple Node-RED instances that run the flows. Docker's internal DNS resolver load balances requests across these instances.
 - **MongoDB:** A replica set that stores the Node-RED flows.
 
+![Architecture Diagram](https://raw.githubusercontent.com/Ahmad44452/scaling-nodered/refs/heads/main/Architecture%20Diagram.png)
+
 ## Components
 
 ### Custom Node-RED Image
