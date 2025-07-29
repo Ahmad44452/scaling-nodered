@@ -1,6 +1,6 @@
 # Scaling Node-RED
 
-This project provides a setup for scaling Node-RED instances horizontally using Docker, NGINX, and MongoDB. It allows you to run multiple Node-RED instances that share the same flows, which are stored in a MongoDB database. Changes made to the flows in one instance are automatically propagated to all other instances in real-time.
+This project provides a setup for scaling Node-RED instances horizontally using Docker, NGINX, and MongoDB. It allows you to run multiple Node-RED instances that share the same flows, which are stored in a MongoDB database. Changes made to the flows in one instance are automatically propagated to all other instances in real-time. For detailed information, you can check out [this article](https://ahmadd.hashnode.dev/scaling-node-red-for-http-based-flows) I wrote explaining the whole setup.
 
 This setup is specifically designed for scaling flows that are triggered by the HTTP-IN node in Node-RED. For other types of triggers, you may need to modify the setup to achieve scalability.
 
