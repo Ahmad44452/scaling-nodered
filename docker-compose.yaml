@@ -27,7 +27,8 @@ services:
     environment:
       - MONGO_CONNECTION_STRING=mongodb://mongo:27017
     depends_on:
-      - mongo
+      mongo:
+        condition: service_healthy
     ports:
       - "1880:1880"
 
@@ -36,7 +37,8 @@ services:
     environment:
       - MONGO_CONNECTION_STRING=mongodb://mongo:27017
     depends_on:
-      - mongo
+      mongo:
+        condition: service_healthy
     deploy:
       replicas: 3
     ports:
